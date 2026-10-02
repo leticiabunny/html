@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Hobby Favorito - Pokémon TCG</title>
+    <style>
+        /* Estilos Globais e Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Cartão Principal */
+        .container {
+            background-color: #ffffff;
+            max-width: 750px;
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            border-top: 6px solid #ffcb05; /* Amarelo Pokémon */
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #e3350d; /* Vermelho Pokébola */
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header .subtitle {
+            font-size: 1rem;
+            color: #ffcb05;
+            font-weight: 600;
+            margin-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* Conteúdo dos Parágrafos */
+        main {
+            padding: 35px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .paragraph-block {
+            background-color: #f8f9fa;
+            border-left: 4px solid #e3350d;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .paragraph-block:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+        }
+
+        .paragraph-block h2 {
+            font-size: 1.1rem;
+            color: #2a2a40;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .paragraph-block p {
+            line-height: 1.7;
+            color: #4a4a5a;
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f5;
+            color: #777;
+            font-size: 0.85rem;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Meu Hobby Favorito</h1>
+            <div class="subtitle">Pokémon TCG</div>
+        </header>
+
+        <main>
+            <!-- Parágrafo 1: Apresentação -->
+            <section class="paragraph-block">
+                <h2>🔹 Apresentação do Hobby</h2>
+                <p>
+                    O meu hobby favorito é jogar Pokémon, uma paixão que combina entretenimento e raciocínio lógico em um universo envolvente. Mais do que uma simples diversão, o jogo me permite explorar diferentes dinâmicas de partidas e conhecer uma comunidade ativa de jogadores que compartilham do mesmo interesse.
+                </p>
+            </section>
+
+            <!-- Parágrafo 2: Prática -->
+            <section class="paragraph-block">
+                <h2>🔹 Como eu Pratico</h2>
+                <p>
+                    Eu pratico esse hobby focando no Pokémon TCG (Trading Card Game), onde monto meus próprios baralhos e treino regularmente para aprimorar minhas jogadas. Para levar o hobby a sério, participo de campeonatos locais e regionais, testando minhas estratégias contra diversos oponentes em um ambiente competitivo e dinâmico.
+                </p>
+            </section>
+
+            <!-- Parágrafo 3: Motivo -->
+            <section class="paragraph-block">
+                <h2>🔹 Por que eu Gosto</h2>
+                <p>
+                    Eu gosto de jogar Pokémon principalmente por ser um jogo extremamente estratégico, no qual cada tomada de decisão e planejamento antecipado fazem toda a diferença para alcançar a vitória. A combinação entre o desafio mental das partidas e a adrenalina dos campeonatos torna a experiência completa e muito motivadora.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Atividade (Material 1-30) &bull; HTML & CSS no VS Code</p>
+        </footer>
+    </div>
+
+</body>
+</html>

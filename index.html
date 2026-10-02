@@ -3,147 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Hobby Favorito - Pokémon TCG</title>
+    <title>Meu Portfólio de Atividades</title>
     <style>
-        /* Estilos Globais e Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
         body {
-            background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%);
-            color: #333;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        /* Cartão Principal */
-        .container {
-            background-color: #ffffff;
-            max-width: 750px;
-            width: 100%;
-            border-radius: 16px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-            border-top: 6px solid #ffcb05; /* Amarelo Pokémon */
-        }
-
-        /* Cabeçalho */
-        header {
-            background-color: #e3350d; /* Vermelho Pokébola */
-            color: #ffffff;
-            padding: 30px 20px;
+            font-family: Arial, sans-serif;
+            background: #f3f0ff;
+            color: #292344;
             text-align: center;
-            position: relative;
+            padding: 40px 20px;
         }
 
-        header h1 {
-            font-size: 2.2rem;
-            letter-spacing: 1px;
-            text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+        h1 { color: #7048c6; }
+
+        .atividades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 35px auto;
         }
 
-        header .subtitle {
-            font-size: 1rem;
-            color: #ffcb05;
-            font-weight: 600;
-            margin-top: 5px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #0001;
         }
 
-        /* Conteúdo dos Parágrafos */
-        main {
-            padding: 35px 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
+        a {
+            display: inline-block;
+            background: #7048c6;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
         }
 
-        .paragraph-block {
-            background-color: #f8f9fa;
-            border-left: 4px solid #e3350d;
-            padding: 20px;
-            border-radius: 0 10px 10px 0;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .paragraph-block:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-        }
-
-        .paragraph-block h2 {
-            font-size: 1.1rem;
-            color: #2a2a40;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .paragraph-block p {
-            line-height: 1.7;
-            color: #4a4a5a;
-            font-size: 1rem;
-            text-align: justify;
-        }
-
-        /* Rodapé */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f1f1f5;
-            color: #777;
-            font-size: 0.85rem;
-            border-top: 1px solid #e0e0e0;
-        }
+        a:hover { background: #52339b; }
     </style>
 </head>
 <body>
+    <h1>Meu Portfólio</h1>
+    <p>Confira as atividades que desenvolvi em HTML.</p>
 
-    <div class="container">
-        <header>
-            <h1>Meu Hobby Favorito</h1>
-            <div class="subtitle">Pokémon TCG</div>
-        </header>
+    <div class="atividades">
+        <div class="card">
+            <h2>Atividade 1</h2>
+            <p>Primeira atividade</p>
+            <a href="index.html">Abrir atividade</a>
+        </div>
 
-        <main>
-            <!-- Parágrafo 1: Apresentação -->
-            <section class="paragraph-block">
-                <h2>🔹 Apresentação do Hobby</h2>
-                <p>
-                    O meu hobby favorito é jogar Pokémon, uma paixão que combina entretenimento e raciocínio lógico em um universo envolvente. Mais do que uma simples diversão, o jogo me permite explorar diferentes dinâmicas de partidas e conhecer uma comunidade ativa de jogadores que compartilham do mesmo interesse.
-                </p>
-            </section>
+        <div class="card">
+            <h2>Atividade 2</h2>
+            <p>Segunda atividade</p>
+            <a href="index2.html">Abrir atividade</a>
+        </div>
 
-            <!-- Parágrafo 2: Prática -->
-            <section class="paragraph-block">
-                <h2>🔹 Como eu Pratico</h2>
-                <p>
-                    Eu pratico esse hobby focando no Pokémon TCG (Trading Card Game), onde monto meus próprios baralhos e treino regularmente para aprimorar minhas jogadas. Para levar o hobby a sério, participo de campeonatos locais e regionais, testando minhas estratégias contra diversos oponentes em um ambiente competitivo e dinâmico.
-                </p>
-            </section>
+        <div class="card">
+            <h2>Atividade 3</h2>
+            <p>Terceira atividade</p>
+            <a href="index3.html">Abrir atividade</a>
+        </div>
 
-            <!-- Parágrafo 3: Motivo -->
-            <section class="paragraph-block">
-                <h2>🔹 Por que eu Gosto</h2>
-                <p>
-                    Eu gosto de jogar Pokémon principalmente por ser um jogo extremamente estratégico, no qual cada tomada de decisão e planejamento antecipado fazem toda a diferença para alcançar a vitória. A combinação entre o desafio mental das partidas e a adrenalina dos campeonatos torna a experiência completa e muito motivadora.
-                </p>
-            </section>
-        </main>
-
-        <footer>
-            <p>Atividade (Material 1-30) &bull; HTML & CSS no VS Code</p>
-        </footer>
+        <div class="card">
+            <h2>Atividade 4</h2>
+            <p>Receita de bolo de cenoura</p>
+            <a href="index4.html">Abrir atividade</a>
+        </div>
     </div>
-
 </body>
 </html>
